@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar} from "../components/Navbar";
-import {Jumbotron} from "../components/Main/Jumbotron";
+import {Jumbotron} from "../components/Jumbotron";
 
 export const Donate = () => {
     return (

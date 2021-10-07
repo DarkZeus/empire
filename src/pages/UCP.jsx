@@ -1,10 +1,10 @@
 import React from 'react';
-import {Jumbotron} from "../components/Main/Jumbotron";
+import {Jumbotron} from "../components/Jumbotron";
 import {Navbar} from "../components/Navbar";
 import LogoLS from "../assets/img/logo-ls.png"
 import {Link} from "react-router-dom";
 import {Codex} from "../components/UCP/Codex";
-import {Footer} from "../components/Main/Footer";
+import {Footer} from "../components/Footer";
 
 export const Ucp = () => {
     return (
