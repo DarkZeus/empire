@@ -2,6 +2,7 @@ import React from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import {Button} from "../UI/Button/Button";
 
 export const Carousel = () => {
     const settings = {
@@ -11,7 +12,6 @@ export const Carousel = () => {
         dotsClass: "slider-menu",
         dots: true,
         pauseOnHover: true,
-        adaptiveHeight: true,
     };
 
     return (
@@ -30,7 +30,7 @@ export const Carousel = () => {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus expedita repudiandae soluta?
                         Cupiditate dolor explicabo facilis fugit id iusto labore magni necessitatibus, omnis, quod vero.
                     </p>
-                    <a href="/" className="play">Начать играть</a>
+                    <Button>Начать играть</Button>
                 </div>
                 <div className="carousel-item">
                     <p className="text animated fadeIn">Lorem Ipsum är en utfyllnadstext från tryck- och
@@ -43,7 +43,7 @@ export const Carousel = () => {
                         <br/>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut consequatur earum
                         facere fugit labore natus nihil, nobis odio quam quasi quis tempore totam vitae?</p>
-                    <a href="/" className="play">Начать играть</a>
+                    <Button>Сравнение</Button>
                 </div>
                 <div className="carousel-item">
                     <p className="text animated fadeIn">Lorem Ipsum је једноставно модел текста који се користи у
@@ -58,7 +58,7 @@ export const Carousel = () => {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto, blanditiis ea error
                         nemo, nulla placeat praesentium quae, reprehenderit tempore ullam vero voluptas voluptatem! In.
                     </p>
-                    <a href="/" className="play">Начать играть</a>
+                    <Button>Донат</Button>
                 </div>
                 <div className="carousel-item">
                     <p className="text animated fadeIn">Lorem Ipsum is slechts een proeftekst uit het drukkerij- en
@@ -73,7 +73,7 @@ export const Carousel = () => {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, aperiam debitis enim
                         eos inventore ipsum maiores nostrum obcaecati perferendis perspiciatis quasi qui quidem
                         recusandae.</p>
-                    <a href="/" className="play">Начать играть</a>
+                    <Button>О проекте</Button>
                 </div>
             </Slider>
         </div>
