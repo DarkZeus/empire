@@ -62,11 +62,11 @@ body {
   height: 100px;
   gap: 60px;
 
-  > li {
+   li {
     list-style-type: none;
     z-index: 10;
 
-    > a {
+     a {
       color: #fff;
       z-index: 10;
       gap: 20px;
@@ -79,16 +79,9 @@ body {
       -o-transition: color .1s;
       transition: color .1s;
 
-      &:hover {
+      &:hover,
+      &.active {
         color: #5aacc0;
-      }
-
-      &:first-child {
-        padding-right: 0;
-      }
-
-      &:last-child {
-        padding-left: 0;
       }
     }
   }
@@ -477,6 +470,7 @@ body {
       justify-content: space-between;
       transition: border-left .1s;
       position: relative;
+      text-decoration: none;
 
       &:hover {
         border-left: 3px solid #62bbd1;
@@ -516,6 +510,7 @@ body {
         right: 0;
         bottom: 0;
         left: 0;
+        text-decoration: none;
       }
     }
   }
