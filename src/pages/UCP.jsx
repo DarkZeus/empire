@@ -1,16 +1,17 @@
 import React from 'react';
 import {Jumbotron} from "../components/Jumbotron";
-import {Navbar} from "../components/Navbar";
 import LogoLS from "../assets/img/logo-ls.png"
 import {Link} from "react-router-dom";
 import {Codex} from "../components/UCP/Codex";
 import {Footer} from "../components/Footer";
+import {Navbar} from "../components/Navbar/Navbar";
+import {publicLinks} from "../components/Navbar/const";
 
 export const Ucp = () => {
     return (
         <div>
             <Jumbotron>
-                <Navbar/>
+                <Navbar links={publicLinks} />
 
                 <div className="header-buttons">
                     <img src={LogoLS}
@@ -22,8 +23,8 @@ export const Ucp = () => {
                         Если вы уже зарегистрированы, авторизуйтесь и создайте своего уникального персонажа.
                     </p>
                     <nav className="header-buttons__buttons">
-                        <Link to="/">Создать аккаунт</Link>
-                        <Link to="/">Авторизация</Link>
+                        <Link to="#">Создать аккаунт</Link>
+                        <Link to="#">Авторизация</Link>
                     </nav>
                 </div>
             </Jumbotron>
